@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>gulp-scss-starter</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        
+        <link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">       
+        <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">             
+        <link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">     
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <header class="header">
+
+    <div class="header__row">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#" class="header__list-link">Live</a></li>
+                <li class="header__list-item"><a href="#" class="header__list-link">24/7</a></li>
+                <li class="header__list-item"><a href="#" class="header__list-link">Спорт</a></li>
+                <li class="header__list-item"><a href="#" class="header__list-link">Киберспорт</a></li>
+                <li class="header__list-item"><a href="#" class="header__list-link">Акции</a></li>
+                <li class="header__list-item"><a href="#" class="header__list-link">Статистика</a></li>
+                <li class="header__list-item"><a href="#" class="header__list-link">Результаты</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="header__logo">
+            <picture>
+                <img src="./img/svg/header_logo.svg" alt="">
+            </picture>
+        </a>
+
+        <div class="header__right">
+            <button class="btn btn_green header__btn header__btn_first">
+                <svg width="30" height="30">
+                    <use xlink:href="./img/sprites/sprite.svg#question_mark"></use>
+                </svg>
+                <span>Помощь</span>
+            </button>
+
+            <button class="btn btn_green header__btn  header__btn_second">Войти</button>
+
+            <button class="btn header__registr">Регистрация </button>
+        
+            <button class="header__burger js-header-burger">
+                <svg width="34" height="24">
+                    <use xlink:href="./img/sprites/sprite.svg#menu_burger"></use>
+                </svg>
+            </button>             
+        
+        </div>
+    </div>
+
+    
+<header class="header__menu js-header-menu">
+    <button class="header__menu-close">
+        <svg width="37" height="37">
+            <use xlink:href="./img/sprites/sprite.svg#close_icon"></use>
+        </svg>
+    </button>
+    <button class="btn btn_green header__btn">Войти</button>
+
+    <button class="btn header__registr">Регистрация </button>
+
+    <nav class="header__menu-nav">
+        <ul class="header__menu-list">
+            <li class="header__menu-item">
+                <a href="#">
+                    <svg width="16" height="16">
+                        <use xlink:href="./img/sprites/sprite.svg#home"></use>
+                    </svg>
+                    <span>Главная</span>
+                </a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#">
+                    <svg width="16" height="16">
+                        <use xlink:href="./img/sprites/sprite.svg#investments"></use>
+                    </svg>
+                    <span>Инвестиции</span>
+                </a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#">
+                    <svg width="16" height="16">
+                        <use xlink:href="./img/sprites/sprite.svg#conclusions"></use>
+                    </svg>
+                    <span>Выводы</span>
+                </a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#">
+                    <svg width="16" height="16">
+                        <use xlink:href="./img/sprites/sprite.svg#story"></use>
+                    </svg>
+                    <span>История</span>
+                </a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#">
+                    <svg width="24" height="16">
+                        <use xlink:href="./img/sprites/sprite.svg#partner"></use>
+                    </svg>
+                    <span>Партнерская программа</span>
+                </a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#">
+                    <svg width="16" height="16">
+                        <use xlink:href="./img/sprites/sprite.svg#settings"></use>
+                    </svg>
+                    <span>Настройки профиля</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li class="header__list-item"><a href="#" class="header__list-link">Live</a></li>
+            <li class="header__list-item"><a href="#" class="header__list-link">24/7</a></li>
+            <li class="header__list-item"><a href="#" class="header__list-link">Спорт</a></li>
+            <li class="header__list-item"><a href="#" class="header__list-link">Киберспорт</a></li>
+            <li class="header__list-item"><a href="#" class="header__list-link">Акции</a></li>
+            <li class="header__list-item"><a href="#" class="header__list-link">Статистика</a></li>
+            <li class="header__list-item"><a href="#" class="header__list-link">Результаты</a></li>
+        </ul>
+    </nav>
+
+    <button class="header__menu-btn">
+        <span>Выход</span>
+        <svg width="16" height="16">
+            <use xlink:href="./img/sprites/sprite.svg#exit_icon"></use>
+        </svg>
+    </button>
+</header>    
+</header>
+
+

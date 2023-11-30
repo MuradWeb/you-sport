@@ -1,0 +1,21 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 13px;
+  background-color: #fea804;
+  color: #111;
+  font-size: 16px;
+  font-style: italic;
+  transition: color .3s linear,background-color .3s linear
+}
+.btn:hover:not(:active) {
+  color: #fff;
+  background-color: #c98400
+}
+.btn_green {
+  background-color: #009f2a;
+  color: #fff;
+  font-style: normal
+}

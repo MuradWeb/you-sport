@@ -1,0 +1,153 @@
+      
+        <footer class="footer">
+   <div class="footer__row">
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__list-item"><a href="#">Платежи</a></li>
+                <li class="footer__list-item"><a href="#">Правила</a></li>
+                <li class="footer__list-item"><a href="#">Акции</a></li>
+                <li class="footer__list-item"><a href="#">Наши партнеры</a></li>
+                <li class="footer__list-item"><a href="#">VIP</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list-item"><a href="#">Новости</a></li>
+                <li class="footer__list-item"><a href="#">Блог</a></li>
+                <li class="footer__list-item"><a href="#">Партнерская Программа</a></li>
+                <li class="footer__list-item"><a href="#">Информация для СМИ</a></li>
+                <li class="footer__list-item"><a href="#">Служба поддержки пользователей</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__info">
+            <a href="tel:8(800) 888 88 88" class="footer__phone">8(800) 888 88 88</a>
+            <a href="mailto:support@yoursport.ru" target="_blank" class="footer__link">support@yoursport.ru</a>
+            <div class="footer__info-media">
+                <a href="#" target="_blank">
+                    <svg width="40" height="40">
+                        <use xlink:href="./img/sprites/sprite.svg#telegram_black"></use>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg width="40" height="40">
+                        <use xlink:href="./img/sprites/sprite.svg#whatsapp_black"></use>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg width="40" height="40">
+                        <use xlink:href="./img/sprites/sprite.svg#viber_black"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="footer__partner">
+            <span>Блок партнеров</span>
+        </div>
+
+        <div class="footer__right">
+            <div class="footer__right-media">
+                <a href="#">
+                    <svg width="40" height="40">
+                        <use xlink:href="./img/sprites/sprite.svg#vk"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="40" height="40"> 
+                        <use xlink:href="./img/sprites/sprite.svg#youtube"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="40" height="40">
+                        <use xlink:href="./img/sprites/sprite.svg#telegram_green"></use>
+                    </svg>
+                </a>
+            </div>
+            <a href="#" class="footer__logo">
+                <picture>
+                    <img src="./img/svg/footer_logo.svg" alt="">
+                </picture>
+            </a>
+        </div>
+   </div>
+
+
+
+   <div class="footer__bottom">
+        <div class="footer__flex">
+            <span>18+</span>
+            <div class="footer__copy">&copy;&nbsp;Букмекерская контора YOUR-SPORT, 2023</div>
+        </div>
+        <p class="footer__bottom-text">
+            ООО «БК«YOUR-SPORT». Адрес места нахождения 000000, ХХХХХХХ область, г. ХХХХХХ, ул. ХХХ, д. Х
+        </p>
+   </div>
+</footer>
+
+
+        <div class="modal modal_auth" id="auth-modal">
+    <div class="modal__box">
+        <div class="modal__box-bg">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./img/content/auth-bg-m.png">
+                <img src="./img/content/auth-bg.png" alt="">
+            </picture>
+        </div>
+        <div class="modal__form">
+            <div class="modal__form-head">
+                <button>Вход</button>
+                <button class="is-active">Регистрация</button>
+            </div>
+
+            <div class="modal__form-block">
+                <form action="" class="modal__form-action">
+                    <label class="modal__form-label">
+                        <input type="text" name="nickname" placeholder="Никнейм*">
+                    </label>
+                    <label class="modal__form-label">
+                        <input type="email" name="email" placeholder="Электронная почта*">
+                    </label>
+                    <label class="modal__form-label">
+                        <input type="password" name="password" placeholder="Пароль*">
+                        <span>
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal__form-label">
+                        <input type="password" name="confirm-password" placeholder="Потвердите пароль*">
+                    </label>
+                    <label class="modal__form-label">
+                        <input type="text" name="code" placeholder="Промо-код(бонусный код)">
+                    </label>
+                    <label class="modal__form-label">
+                        <input type="text" name="secred-code" placeholder="Секретный код">
+                    </label>
+                    <label class="modal__form-checkbox">
+                        <input type="checkbox" name="agreement">
+                        <span></span>
+                        <p>
+                            Мне больше 18 лет, я соглашаюсь на обработку <a href="#" target="_blank">Персональных данных</a>, соглашаюсь с <a href="#" target="_blank">Правилами</a> 
+                            и <a href="#" target="_blank">Политикой конфидециальности ООО «БК«YOURSPORT» </a> 
+                        </p>
+                    </label>
+
+                    <button class="modal__form-submit">
+                        Войти
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+        
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+<script src="./libs/jquery-3.5.1.min.js"></script>
+<script src="/libs/jquery.inputmask.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script src="js/main.js"></script>
+    </body>
+</html>

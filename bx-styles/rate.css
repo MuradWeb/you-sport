@@ -1,0 +1,447 @@
+@charset "UTF-8";
+.rate {
+  background-color: #111;
+  padding: 169px 0 192px;
+  position: relative
+}
+.rate__container {
+  position: relative;
+  z-index: 5
+}
+.rate__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1
+}
+.rate__head {
+  margin-bottom: 64px
+}
+.rate__title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  z-index: 9;
+  position: relative
+}
+.rate__title::before {
+  content: "Выберите подходящий тариф";
+  position: absolute;
+  z-index: -1;
+  font-size: inherit;
+  filter: blur(2px)
+}
+.rate__title-icon {
+  position: absolute;
+  z-index: 10;
+  top: 3px;
+  left: 51.8%
+}
+.rate__title-icon svg {
+  width: 75px;
+  height: 85px
+}
+.rate__row {
+  display: flex;
+  align-items: stretch;
+  margin: 0 -25px
+}
+.rate__card {
+  width: calc(33.333% - 50px);
+  margin: 0 25px;
+  position: relative;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+  border-radius: 37px
+}
+.rate__card-content {
+  position: absolute;
+  top: 360px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.rate__card-text {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: normal;
+  position: relative
+}
+.rate__card-text::before {
+  content: attr(data-text);
+  position: absolute;
+  z-index: -1;
+  font-size: inherit;
+  filter: blur(2px)
+}
+.rate__card-name {
+  font-family: ReservationWide,sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative
+}
+.rate__card-name::before {
+  content: attr(data-name);
+  position: absolute;
+  z-index: -1;
+  font-size: inherit;
+  filter: blur(2px)
+}
+.rate__card-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 14px 48px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  position: relative
+}
+.rate__card-link::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  filter: blur(2px)
+}
+.rate__card-link span {
+  position: relative
+}
+.rate__card-link span::before {
+  content: "Подробнее";
+  position: absolute;
+  z-index: -1;
+  font-size: inherit;
+  filter: blur(2px)
+}
+.rate__bottom {
+  margin-top: 277px;
+  display: flex;
+  justify-content: space-between
+}
+.rate__content {
+  color: #fff;
+  font-family: TT-TravelsNext;
+  padding-top: 75px
+}
+.rate__content-title {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 56px
+}
+.rate__content-title strong {
+  text-transform: uppercase;
+  position: relative
+}
+.rate__content-title strong::before {
+  content: "СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ";
+  position: absolute;
+  z-index: -1;
+  font-size: inherit;
+  filter: blur(2px)
+}
+.rate__content-title span {
+  position: relative
+}
+.rate__content-title span::before {
+  content: "для новых пользователей";
+  position: absolute;
+  z-index: -1;
+  font-size: inherit;
+  filter: blur(2px)
+}
+.rate__flex {
+  display: inline-flex;
+  margin: 0 -5px
+}
+.rate__flex svg {
+  width: 21px;
+  height: 21px;
+  margin: 0 5px
+}
+.rate__content-flex {
+  padding-left: 170px
+}
+.rate__content-item {
+  position: relative
+}
+.rate__content-item:not(:last-child) {
+  margin-bottom: 45px
+}
+.rate__content-numb {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: normal;
+  font-style: italic;
+  position: absolute;
+  top: -30px;
+  left: -50px;
+  z-index: 10
+}
+.rate__content-text {
+  position: relative;
+  width: 100%;
+  max-width: 594px;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 25px;
+  background: rgba(75,94,0,.25);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  padding: 48px 0;
+  font-style: italic;
+  z-index: 9
+}
+.rate__right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.rate__right-icon {
+  width: 100%;
+  max-width: 482px
+}
+.rate__right-btn {
+  margin-top: 40px;
+  padding: 36.5px 116px;
+  border-radius: 25px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
+  position: relative
+}
+.rate__right-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background: #fea804;
+  filter: blur(2px)
+}
+.rate__right-btn span {
+  position: relative
+}
+.rate__right-btn span::before {
+  content: "Подробнее";
+  position: absolute;
+  z-index: -1;
+  font-size: inherit;
+  filter: blur(2px)
+}
+@media (max-width:1560px) {
+  .rate__title {
+    font-size: 38px
+  }
+  .rate__title-icon {
+    top: -3px;
+    left: 41.5%
+  }
+  .rate__title-icon svg {
+    width: 60px
+  }
+  .rate__content-title {
+    font-size: 36px
+  }
+  .rate__right-btn {
+    padding: 25px 70px
+  }
+}
+@media (max-width:1500px) {
+  .rate__card-content {
+    top: 270px
+  }
+  .rate__bottom {
+    margin-top: 150px
+  }
+}
+@media (max-width:1450px) {
+  .rate__content-title {
+    font-size: 30px
+  }
+  .rate__content-numb {
+    font-size: 40px
+  }
+  .rate__content-text {
+    max-width: 520px
+  }
+  .rate__right-icon {
+    max-width: 400px
+  }
+}
+@media (max-width:1340px) {
+  .rate__card-text {
+    font-size: 20px
+  }
+  .rate__card-name {
+    font-size: 38px;
+    margin-bottom: 25px
+  }
+}
+@media (max-width:1240px) {
+  .rate__row {
+    flex-wrap: wrap;
+    margin: -20px -20px 0
+  }
+  .rate__card {
+    width: calc(50% - 40px);
+    margin: 20px 20px 0
+  }
+  .rate__content,
+  .rate__content-flex {
+    padding: 0
+  }
+  .rate__content-numb {
+    left: 0
+  }
+  .rate__content-text {
+    max-width: 470px
+  }
+  .rate__right-btn {
+    font-size: 30px
+  }
+}
+@media (max-width:1024px) {
+  .rate__title {
+    font-size: 29px
+  }
+  .rate__title-icon svg {
+    width: 28px;
+    height: 31px
+  }
+  .rate__card-content {
+    top: 200px
+  }
+  .rate__card-name {
+    font-size: 24px
+  }
+  .rate__card-link {
+    font-size: 14px
+  }
+  .rate__bottom {
+    flex-direction: column;
+    margin-top: 100px
+  }
+  .rate__content-numb {
+    font-size: 30px
+  }
+  .rate__content-text {
+    font-size: 20px;
+    padding: 30px 0;
+    margin-left: 60px
+  }
+  .rate__right {
+    margin-top: 30px
+  }
+}
+@media (max-width:768px) {
+  .rate {
+    padding: 81px 0 132px
+  }
+  .rate__head {
+    margin-bottom: 78px
+  }
+  .rate__content-title {
+    font-size: 24px
+  }
+}
+@media (max-width:640px) {
+  .rate__row {
+    padding: 0 100px;
+    margin: -20px 0 0
+  }
+  .rate__card {
+    width: 100%;
+    margin: 20px 0 0
+  }
+  .rate__flex {
+    display: block
+  }
+}
+@media (max-width:570px) {
+  .rate__content-text {
+    margin-left: 20px
+  }
+}
+@media (max-width:540px) {
+  .rate__row {
+    padding: 0 50px
+  }
+  .rate__card-content {
+    top: 180px
+  }
+  .rate__content-title strong {
+    font-size: 21px
+  }
+  .rate__content-title span {
+    font-size: 18px
+  }
+  .rate__content-numb {
+    font-size: 22px
+  }
+  .rate__content-text {
+    max-width: 400px;
+    font-size: 16px;
+    padding: 10px 8px;
+    text-align: start;
+    border-radius: 5px
+  }
+  .rate__right-btn {
+    margin-top: 0;
+    font-size: 24px;
+    padding: 39px 88px
+  }
+}
+@media (max-width:479px) {
+  .rate__card-text {
+    font-size: 14px
+  }
+  .rate__card-link {
+    font-size: 11px;
+    padding: 7px 20px
+  }
+  .rate__right {
+    margin-top: 0
+  }
+  .rate__right-icon {
+    max-width: 300px;
+    position: absolute;
+    top: -25px;
+    right: -15px
+  }
+  .rate__right-btn {
+    margin-top: 270px
+  }
+}
+@media (max-width:450px) {
+  .rate__content-text {
+    white-space: nowrap;
+    max-width: 350px;
+    margin-left: 10px
+  }
+}
