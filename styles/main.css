@@ -1406,10 +1406,20 @@ ul {
   margin-bottom: 25px;
 }
 
-.personal__table-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
+.personal__table tr.padding td {
+  height: 40px;
+}
+
+.personal__table td:first-child {
+  width: 140px;
+}
+
+.personal__table td:nth-child(2) {
+  padding: 0 24px;
+}
+
+.personal__table td:last-child {
+  width: 100px;
 }
 
 .personal__table-currency {
@@ -1970,10 +1980,6 @@ ul {
   .personal__box {
     padding: 35px 30px;
   }
-
-  .personal__table-item {
-    margin-bottom: 20px;
-  }
 }
 
 @media (max-width: 992px) {
@@ -2022,6 +2028,14 @@ ul {
   .personal__title {
     font-size: 24px;
     margin-bottom: 25px;
+  }
+
+  .personal__table tr.padding td {
+    height: 15px;
+  }
+
+  .personal__table td:nth-child(2) {
+    padding: 0 15px;
   }
 
   .infinite-autoplay-carousel__title {
@@ -2104,8 +2118,13 @@ ul {
     margin: 0;
   }
 
-  .personal__table-item {
-    display: block;
+  .personal__table tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personal__table td:nth-child(2) {
+    padding: 0;
   }
 
   .personal__table-currency {
@@ -2297,6 +2316,16 @@ ul {
   .intro__title {
     top: -50px;
     right: 5px;
+  }
+}
+
+@media (max-width: 370px) {
+  .intro__logo {
+    max-width: 160px;
+  }
+
+  .intro__title {
+    max-width: 120px;
   }
 }
 

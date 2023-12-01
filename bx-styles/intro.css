@@ -149,6 +149,14 @@
     right: 5px
   }
 }
+@media (max-width:370px) {
+  .intro__logo {
+    max-width: 160px
+  }
+  .intro__title {
+    max-width: 120px
+  }
+}
 @media (max-width:992px) and (min-width:541px) {
   .intro__right {
     align-items: start
